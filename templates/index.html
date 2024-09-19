@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-1" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-2" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <br>
+      </div>
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+        <h2 class="gold-text tm-welcome-header-2">Agro AI</h2>
+        <p class="gray-text tm-welcome-description"><span
+            class="gold-text"> We integrate AI, crops, fertilizers, and pesticides to optimize farming</span> We take of your soil's health. We at <span class="gold-text">
+          Agro AI </span>, honor <span
+                class="gold-text">the Indian Farmer's love, hard work and character.</span>
+                Natural challenges threaten their productivity, and Argo AI is a small initiative enhancing agriculture.
+                We assist farmers in making smart decisions by considering field demographics, crop factors, and maintaining soil health for a superb yield."</p>
+        <br><br><br>
+      </div>
+      <img src="{{ url_for('static', filename='img/table-set.jpeg') }}" alt="Table Set" class="tm-table-set img-responsive" width="100%">
+    </div>
+  </section>
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-2.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>rop Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Choosing the ideal crop for your conditions is crucial. Prioritize making well-informed decisions before embarking on the cultivation journey.</p>
+              <div class="order-now-container">
+                <a href="CropRecommendation.html" class="order-now-link tm-handwriting-font">Click Here</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/pop3.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">F</span>ertilizer Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Selecting the right fertilizer for your cultivated soil and prescribed crop is key to achieving optimum production.
+                Ensure your crops receive the essential nutrients they need</p>
+              <div class="order-now-container">
+                <a href="FertilizerRecommendation.html" class="order-now-link tm-handwriting-font">Click Here</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/pop1.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">P</span>esticide Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Combat the significant threat of pests with Agro AI.
+                Discover the right pesticide to proactively control and mitigate potential damage to your crops before it occurs</p>
+              <div class="order-now-container">
+                <a href="PesticideRecommendation.html" class="order-now-link tm-handwriting-font">Click Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+{% endblock %}

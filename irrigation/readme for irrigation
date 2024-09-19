@@ -1,0 +1,19 @@
+here in this folder we are making a irrigation model that is
+going to respond according to the soil moisture and will act accordingly
+for example
+if soil moisture is less than 50 it will triger fast irrigation
+
+to run this
+cd over to irrigation
+python reinforcement.py
+
+this was our model
+we have a data.py file that is to generate random data of soil moisture between 10 to 90
+in data.csv file
+
+now we have three files left 2d.py , 3d.py , 3da.py
+
+python 2d.py file will make a 2d visualization of the model
+
+python 3d.py will make a 3d visulization of teh model with respectt to plant growth over 70 day
+python 3da.py will make a animated 3d version over the 70 days of the farming.
